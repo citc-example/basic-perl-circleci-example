@@ -7,4 +7,6 @@ jobs:
       - checkout
       - run:
           name: Example command
-          command: perl -E 'say "Hello, World\n"'
+          command: |
+            perl -E 'say "Hello, World\n"'
+            perl -E 'say "Goodbye, World\n"'
