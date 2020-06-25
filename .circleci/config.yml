@@ -8,5 +8,9 @@ jobs:
       - run:
           name: Example command
           command: |
-            perl -E 'say "Hello, World\n"'
-            perl -E 'say "Goodbye, World\n"'
+            perl \<<END
+                use feature 'say';
+                say "Look an entire Perl script";
+                say "Right in the middle of my YAML";
+                say "Whooo hooo";
+            END
