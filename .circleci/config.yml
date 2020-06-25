@@ -5,4 +5,6 @@ jobs:
       - image: perldocker/perl-tester:5.32
     steps:
       - checkout
-      - run: perl -E 'say "Hello, World\n"'
+      - run:
+          name: Example command
+          command: perl -E 'say "Hello, World\n"'
