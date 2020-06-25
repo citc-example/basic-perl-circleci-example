@@ -1,0 +1,8 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: perldocker/perl-tester:5.32
+    steps:
+      - checkout
+      - run: perl -E 'say "Hello, World\n"'
